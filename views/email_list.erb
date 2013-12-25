@@ -1,0 +1,21 @@
+
+
+
+<h1>Email List</h1>
+
+<table border='1px'>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>email</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @people.each do |person| %>
+			<tr>
+				<td><%= person.name %></td>
+				<td><%= person.email %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
